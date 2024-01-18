@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-import Menu from '../menu/page'
+import Menu from '../menu/Menu'
 import { SignOutButton, SignedIn, UserButton } from '@clerk/nextjs'
 import { Logout } from '@mui/icons-material'
 const LeftSidebar = () => {
@@ -17,7 +17,7 @@ const LeftSidebar = () => {
             <Image src="/assets/phucmai.png" width={50} height={50} alt='avatar' className='rounded-full' />
 
           </Link>
-          <p className='text-small-bold'>Diem Quynh</p>
+          <p className='text-small-bold'>Diem dsada Quynh</p>
         </div>
         <div className='flex flex-row text-light-1 justify-between'>
           <div className='flex flex-col gap-2 items-center'>

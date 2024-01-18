@@ -6,7 +6,8 @@ export const metadata = {
     description: 'Next14 social media app'
 }
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
+
 export default function RootLayout({ children }) {
     return (
         <ClerkProvider>

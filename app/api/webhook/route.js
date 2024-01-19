@@ -55,12 +55,12 @@ export async function POST(req) {
 
         try {
             await createOrUpdateUser(id, first_name, last_name, image_url, email_addressess, username)
-            return new Reponse("User is created or update", {
+            return new Response("User is created or update", {
                 status: 200
             })
         } catch (error) {
             console.log(error);
-            return new Reponse("Error occured", {
+            return new Response("Error occured", {
                 status: 500
             })
         }

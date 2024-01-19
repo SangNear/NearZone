@@ -7,7 +7,7 @@ const RightSideBar = () => {
         <h4 className="text-heading4-bold">Following</h4>
         <div>maping people</div>
       </div>
-      <div>
+      <div className="flex flex-col gap-4">
         <h4 className="text-heading4-bold">Suggested</h4>
         <div>maping people</div>
       </div>

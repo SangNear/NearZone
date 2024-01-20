@@ -65,16 +65,18 @@ export async function POST(req) {
             })
         }
   }
+
   if(eventType === 'user.deleted') {
     try {
         const {id} = evt?.data
         await deleteUser(id)
-        return new Reponse("User is deleted" , {
+        return new Response("User is deleted" , {
             status: 200
         })
-    } catch (error) {
+    }
+     catch (error) {
         console.log(error);
-        return new Reponse("Error occured", {
+        return new Response("Error occured", {
             status: 500
         })
     }
